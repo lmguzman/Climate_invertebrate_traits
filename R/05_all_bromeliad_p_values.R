@@ -1,3 +1,12 @@
+### In this script we calculate the p-values for the three scales of the analysis.
+# here we do not do the sub-sampling procedure, instead we use all bromeliads
+# the abundance and region data has been 'anonymized' as per agreement with the data contributors
+
+## for all analyses here, instead of permuting the site matrix (bromeliads or bioclimatic zones), 
+#we adapted the method to permute among the species vectors in the trait matrix and recomputed the CWMs, 
+#to reduce the risk of type I error (Peres-Neto and Kembel 2015, Hawkins et al. 2017, Zelený 2018)
+
+
 library(vegan)
 library(SYNCSA)
 library(broom)

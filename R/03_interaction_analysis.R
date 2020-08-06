@@ -1,3 +1,9 @@
+### This script runs the permanova, only collecting the sums of squares.
+## the data has already been sub-sampled and it is loaded here as CWM and local variables
+## the raw data is not presented as per agreement with the data contributors
+
+#Interaction between local and regional scale analysis 
+
 library(vegan)
 library(broom)
 

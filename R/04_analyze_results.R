@@ -1,3 +1,6 @@
+## This script compiles the results from the local, regional and interaction scale analyses and presents
+# the mean sums of squares for each term
+
 library(dplyr)
 library(purrr)
 library(ggplot2)
@@ -25,6 +28,7 @@ total_local <- local %>%
   rename(SS_total = SumOfSqs) %>% 
   select(SS_total, run)
 
+# compute percentages for figure
 local_percentage <- local %>% 
   filter(term != 'Total') %>% 
   left_join(total_local) %>% 
@@ -55,6 +59,11 @@ mean_ss_local <- local %>%
 total_ss_local <- filter(mean_ss_local, term == 'Total')
 
 # Percentage sums of squares
+
+# We calcualte first the mean sums of squares and then calculate the proportion based on the mean total sums of squares
+# we do this procedure in this order as some of the distributions were skewed and 
+#allowed us to take advantage of the central limit theorem to ensure that the division occurs on normally distributed means
+
 mean_ss_local %>% 
   filter(!term %in% c("Residual", "Total")) %>% 
   mutate(percentage_ss = 100*(mean_ss/total_ss_local$mean_ss))
@@ -69,6 +78,8 @@ total_regional <- regional %>%
   filter(term == 'Total') %>% 
   rename(SS_total = SumOfSqs) %>% 
   select(SS_total, run)
+
+# compute percentages for figure
 
 regional_percentage <- regional %>% 
   filter(term != 'Total') %>% 
@@ -101,6 +112,12 @@ mean_ss_regional <- regional %>%
 total_ss_regional <- filter(mean_ss_regional, term == 'Total')
 
 # Percentage sums of squares
+
+# We calcualte first the mean sums of squares and then calculate the proportion based on the mean total sums of squares
+# we do this procedure in this order as some of the distributions were skewed and 
+#allowed us to take advantage of the central limit theorem to ensure that the division occurs on normally distributed means
+
+
 mean_ss_regional %>% 
   filter(!term %in% c("Residual", "Total")) %>% 
   mutate(percentage_ss = 100*(mean_ss/total_ss_regional$mean_ss))
@@ -115,6 +132,8 @@ total_interaction <- interaction %>%
   filter(term == 'Total') %>% 
   rename(SS_total = SumOfSqs) %>% 
   select(SS_total, run)
+
+# compute percentages for figure
 
 interaction_percentage <- interaction %>% 
   filter(term != 'Total') %>% 
@@ -153,6 +172,12 @@ mean_ss_interaction <- interaction %>%
 total_ss_interaction <- filter(mean_ss_interaction, term == 'Total')
 
 # Percentage sums of squares
+
+# We calcualte first the mean sums of squares and then calculate the proportion based on the mean total sums of squares
+# we do this procedure in this order as some of the distributions were skewed and 
+#allowed us to take advantage of the central limit theorem to ensure that the division occurs on normally distributed means
+
+
 mean_ss_interaction %>% 
   filter(!term %in% c("Residual", "Total")) %>% 
   mutate(percentage_ss = 100*(mean_ss/total_ss_interaction$mean_ss))
