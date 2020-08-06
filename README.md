@@ -11,4 +11,4 @@ We conclude that climate explains more variation in invertebrate trait compositi
 Importantly, climate mediated the response of traits to local conditions; for example, invertebrates with benthic life-history traits increased with bromeliad water volume only under certain precipitation regimes. 
 Our ability to detect this and other patterns hinged on the compilation of multiple fine-grained datasets, allowing us to contrast the effect of climate vs. local conditions.
 
-Our study was supported by CESAB.
+Our study was supported by [CESAB](https://www.fondationbiodiversite.fr/en/about-the-foundation/le-cesab/).
