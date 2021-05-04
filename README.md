@@ -2,7 +2,7 @@
 
 This repository contains code and data associated with “Climate influences the response of community functional traits to local conditions.”
 
-Guzman, L. M.^, Trzcinski, M.^, Barberis, I., Céréghino, R., Srivastava, D., Gilbert, B., Pillar, V., de Omena, P., MacDonald, A. A., Corbara, B., Leroy, C., Bautista, F., Romero, G., Kratina, P., Debastiani, V., Gonçalves, A., Marino, N., Farjalla, V., Richardson, B., Richardson, M., Dézerald, O., Piccoli, G., Jocque, M., Montero, G. (In review at Ecography) Climate influences the response of community functional traits to local environmental conditions. ^Authors contributed equally
+Guzman, L. M.^, Trzcinski, M.^, Barberis, I., Céréghino, R., Srivastava, D., Gilbert, B., Pillar, V., de Omena, P., MacDonald, A. A., Corbara, B., Leroy, C., Bautista, F., Romero, G., Kratina, P., Debastiani, V., Gonçalves, A., Marino, N., Farjalla, V., Richardson, B., Richardson, M., Dézerald, O., Piccoli, G., Jocque, M., Montero, G. (2021) Climate influences the response of community functional traits to local environmental conditions. Ecography. 44 (3), 440-452. [DOI](https://onlinelibrary.wiley.com/doi/full/10.1111/ecog.05437) ^Authors contributed equally
 
 ## In a nutshell
 
